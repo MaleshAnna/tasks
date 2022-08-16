@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="../../index.html">На головну</a>
+    <h1>Форма</h1>
+    <form>
+      <fieldset>
+        <legend>Особисті дані</legend>
+        <label> ПІБ<input type="text" /></label><br />
+        <label> Адреса<input type="text" /></label> <br />
+        <label>
+          Вік<input type="number" min="18" max="65" placeholder="18"
+        /></label>
+        <br />
+        <label>
+          Пошта
+          <input type="email" placeholder="example@gmail.com"
+        /></label>
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Місце роботи</legend>
+        <br />
+        <label> Адреса організації<input type="text" /></label> <br />
+        <label> Стаж роботи<input type="number" /></label><br />
+        <label> Дата початку роботи <input type="date" /> </label> <br />
+      </fieldset>
+      <fieldset>
+        <legend>Cтатистичний опитувальник</legend>
+        <label> Як оцінюєте роботу президента?<input type="range" /> </label>
+        <br />
+        <label>
+          Коментар стосовно останніх виборів
+          <textarea
+            placeholder="Введіть відповідь"
+            cols="30"
+            rows="5"
+          ></textarea>
+        </label>
+        <br />
+        <label> Найкращий місяць для відпустки<input type="month" /></label>
+      </fieldset>
+      <fieldset>
+        <legend>Пріоритети</legend>
+        <div>Кава</div>
+        <label><input type="radio" name="coffee" /> Еспресо</label><br />
+        <label> <input type="radio" name="coffee" /> Американо</label><br />
+        <label> <input type="radio" name="coffee" /> Капучино</label><br />
+        <label> <input type="radio" name="coffee" /> Латте</label>
+        <div>Місця для відпочинку</div>
+        <label> <input type="checkbox" name="" value="yes" />Єгипет</label
+        ><br />
+        <label> <input type="checkbox" name="" value="yes" />Турція</label
+        ><br />
+        <label> <input type="checkbox" name="" value="yes" />Мальдіви</label
+        ><br />
+        <label> <input type="checkbox" name="" value="yes" />Швейцарія</label>
+        <div>Автомобіль</div>
+        <select>
+          <option>BMW</option>
+          <option>Audi</option>
+          <option>Mersedes</option>
+          <option>Tesla</option>
+        </select>
+        <div>Овочі</div>
+        <select>
+          <optgroup label="Червоні"></optgroup>
+          <option value="помідор">Помідор</option>
+          <option value="Перець">Перець</option>
+          <option value="Ьуряк">Ьуряк</option>
+          <optgroup label="Зелені"></optgroup>
+          <option value="Огірок">Огірок</option>
+          <option value="Кабачок">Кабачок</option>
+          <option value="Капуста">Капуста</option>
+        </select>
+      </fieldset>
+    </form>
+    <button type="reset">Очистити</button>
+    <button type="submit">Відправити</button>
+  </body>
+</html>
